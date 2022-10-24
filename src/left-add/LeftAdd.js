@@ -40,7 +40,7 @@ export default class LeftAdd extends Component {
                                         <label className="form-label">Потужність вибуху (в кілотоннах)</label>
                                     </th>
                                     <td>
-                                        <input type="number" className="form-num" defaultValue={20} name="power" step="0.1" min="0.1" max="100000" />
+                                        <input type="number" className="form-num" defaultValue={20} name="power" step="0.01" min="0.01" max="100000" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -49,17 +49,17 @@ export default class LeftAdd extends Component {
                                     </th>
                                     <td>
                                         <select className="form-select" id="exampleSelect3" name="type-explosion">
-                                            <option> Наземний </option>
-                                            <option> Повітряний </option>
+                                            <option>Наземний</option>
+                                            <option>Повітряний</option>
                                         </select>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        <label className="form-label">Швидкість вітру (м/с)</label>
+                                        <label className="form-label">Швидкість вітру (км/год)</label>
                                     </th>
                                     <td>
-                                        <input type="number" className="form-num" defaultValue={1} name="wind" step="0.1" min="0.1" max="20" />
+                                        <input type="number" className="form-num" defaultValue={25} name="wind" step="1" min="10" max="100" />
                                     </td>
                                 </tr>
 
