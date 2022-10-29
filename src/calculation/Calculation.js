@@ -606,6 +606,8 @@ export default class CalculationFirst extends Component {
         }
     }
 
+
+
     widthG() {
         const { dataExplosion: { typeExplosion, power, wind } } = this.props;
         if (!power) {
