@@ -7,53 +7,41 @@ import LeftAdd from "./left-add/LeftAdd";
 import LeftOut from "./left-out/LeftOut";
 import Footer from "./footer/Footer";
 import HowToWork from "./howToWork/HowToWork";
+import WhatsNew from './whats-new/WhatsNew';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-export default class App extends Component {
 
-  state = {
-    dataExplosion: '',
-    directionWind: '',
-  }
+function App() {
 
-  render() {
-    let calcFunction = (dataExplosion) => {
-      this.setState({ dataExplosion })
-    }
+  return (
 
-    let calcWind = (directionWind) => {
-      this.setState({ directionWind })
-    }
+    <Container fluid>
+      <Row>
+        <Col>
+          <Header />
+        </Col>
+      </Row>
+      <Row>
+        <Col md={4}>
+          <LeftAdd />
+          <LeftOut />
+        </Col>
+        <Col md={8}>
+          <Routes >
+            <Route exact path="/" element={<MapCoordinate />} />
+            <Route exact path="/how" element={<HowToWork />} />
+            <Route exact path="/what" element={<WhatsNew />} />
+          </Routes >
+        </Col>
 
-    return (
-
-      <Container fluid>
-        <Row>
-          <Col>
-            <Header />
-          </Col>
-        </Row>
-        <Row>
-          <Col md={4}>
-            <LeftAdd
-              calcFunction={calcFunction}
-              calcWind={calcWind} />
-            <LeftOut data={this.state} />
-          </Col>
-          <Col md={8}>
-            <Routes >
-              <Route exact path="/" element={<MapCoordinate data={this.state} />} />
-              <Route exact path="/how" element={<HowToWork />} />
-            </Routes >
-          </Col>
-
-        </Row>
-        <Row>
-          <Col>
-            <Footer />
-          </Col>
-        </Row>
-      </Container>
-    );
-  }
+      </Row>
+      <Row>
+        <Col>
+          <Footer />
+        </Col>
+      </Row>
+    </Container>
+  );
 }
+
+export default App

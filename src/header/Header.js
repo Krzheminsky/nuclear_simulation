@@ -27,6 +27,9 @@ export default class Header extends Component {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/how">Як користуватися</Link>
                             </li>
+                            <li className="nav-item ">
+                                <Link className="nav-link whats " to="/what">Що нового</Link>
+                            </li>
 
                             <li className="nav-item">
                                 <a className="nav-link" target="_blank" rel="noreferrer" href="http://forecast.inf.ua/" data-help="Прогнозування наслідків аварій на хімічно-небезпечних об'єктах">Forecast</a>
