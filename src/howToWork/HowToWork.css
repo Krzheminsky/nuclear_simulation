@@ -71,3 +71,7 @@ span.attention {
     color: tomato;
     font-weight: 600;
 }
+
+.top {
+    margin-bottom: 30px !important;
+}

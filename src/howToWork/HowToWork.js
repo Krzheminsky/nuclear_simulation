@@ -71,7 +71,7 @@ export default class HowToWork extends Component {
                     Результати вимірювань відстані та/або площі можна побачити внизу під мапою.
                 </p>
                 <p>З повагою та надією на розуміння, автор - Віктор Кржемінський. <a href="mailto:krzheminsky@ukr.net">krzheminsky@ukr.net</a> </p>
-                <h5 className="about-h3">Все буде Україна! </h5>
+                <h5 className="about-h3 top">Все буде Україна! </h5>
             </div >
         );
     }

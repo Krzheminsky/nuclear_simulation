@@ -18,9 +18,15 @@ a.nav-link.whats {
     color: #0d6efd !important;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 504px) {
     .navbar-brand h1 {
         display: none;
+    }
+}
+
+@media (max-width: 354px) {
+    .navbar-brand {
+        font-size: 1rem !important;
     }
 }
 
