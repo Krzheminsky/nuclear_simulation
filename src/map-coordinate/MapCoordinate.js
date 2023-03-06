@@ -226,23 +226,23 @@ function MapCoordinate() {
                                 <LayersControl.Overlay checked name="Радіоактивне зараження місцевості">
                                     <LayerGroup>
 
-                                        <Polygon pathOptions={{ color: "#f4fc03" }} positions={cloudA} >
+                                        <Polygon pathOptions={{ color: "blue" }} positions={cloudA} >
                                             <Popup>
                                                 Зона помірного зараження (зона А),<br /> глибина: {depthA}  км,<br /> ширина: {widthA}  км,<br /> площа: {(((1.13 * widthA) * depthA / 2) + Math.pow((3.1415 * widthA), 2)).toFixed(2)} км<sup>2</sup>
                                             </Popup>
                                         </Polygon>
-                                        <Polygon pathOptions={{ color: "#fcc603" }} positions={cloudB} >
+                                        <Polygon pathOptions={{ color: "green" }} positions={cloudB} >
                                             <Popup>
                                                 Зона сильного зараження (зона Б),<br /> глибина: {depthB}  км,<br /> ширина: {widthB}  км,<br /> площа: {(((1.13 * widthB) * depthB / 2) + Math.pow((3.1415 * widthB), 2)).toFixed(2)} км<sup>2</sup>
                                             </Popup>
                                         </Polygon>
-                                        <Polygon pathOptions={{ color: "#fc9803" }} positions={cloudV} >
+                                        <Polygon pathOptions={{ color: "brown" }} positions={cloudV} >
                                             <Popup>
                                                 Зона небезпечного зараження (зона В),<br /> глибина: {depthV}  км,<br /> ширина: {widthV}  км,<br /> площа: {(((1.13 * widthV) * depthV / 2) + Math.pow((3.1415 * widthV), 2)).toFixed(2)} км<sup>2</sup>
                                             </Popup>
                                         </Polygon>
 
-                                        <Polygon pathOptions={{ color: "#bd5308" }} positions={cloudG} >
+                                        <Polygon pathOptions={{ color: "black" }} positions={cloudG} >
                                             <Popup>
                                                 Зона надзвичайно небезпечного зараження (зона Г),<br /> глибина: {depthG}  км,<br /> ширина: {widthG}  км,<br /> площа: {(((1.13 * widthG) * depthG / 2) + Math.pow((3.1415 * widthG), 2)).toFixed(2)} км<sup>2</sup>
                                             </Popup>

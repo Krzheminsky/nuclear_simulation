@@ -9,6 +9,7 @@ import Footer from "./footer/Footer";
 import HowToWork from "./howToWork/HowToWork";
 import WhatsNew from './whats-new/WhatsNew';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Application from "./application/Application";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
               <Route exact path="/" element={<MapCoordinate />} />
               <Route exact path="/how" element={<HowToWork />} />
               <Route exact path="/what" element={<WhatsNew />} />
+              <Route exact path="/application" element={<Application />} />
             </Routes >
           </Col>
 

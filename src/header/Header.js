@@ -28,7 +28,10 @@ export default class Header extends Component {
                                 <Link className="nav-link" to="/how">Як користуватися</Link>
                             </li>
                             <li className="nav-item ">
-                                <Link className="nav-link whats " to="/what">Що нового</Link>
+                                <Link className="nav-link" to="/what">Що нового</Link>
+                            </li>
+                            <li className="nav-item ">
+                                <Link className="nav-link whats menu" to="/application">Мобільний додаток</Link>
                             </li>
 
                             <li className="nav-item">
