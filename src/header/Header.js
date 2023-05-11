@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import './Header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default class Header extends Component {
 
@@ -21,9 +22,6 @@ export default class Header extends Component {
                                 <Link className="nav-link active" to="/">Головна<span className="visually-hidden">(current)</span>
                                 </Link>
                             </li>
-
-
-
                             <li className="nav-item">
                                 <Link className="nav-link" to="/how">Як користуватися</Link>
                             </li>
@@ -31,11 +29,25 @@ export default class Header extends Component {
                                 <Link className="nav-link" to="/what">Що нового</Link>
                             </li>
                             <li className="nav-item ">
-                                <Link className="nav-link whats menu" to="/application">Мобільний додаток</Link>
+                                <Link className="nav-link " to="/application">Мобільний додаток</Link>
                             </li>
 
                             <li className="nav-item">
                                 <a className="nav-link" target="_blank" rel="noreferrer" href="http://forecast.inf.ua/" data-help="Прогнозування наслідків аварій на хімічно-небезпечних об'єктах">Forecast</a>
+                            </li>
+                            <li className="nav-item metod">
+                                <motion.a className="nav-link whats menu" target="_blank"
+
+                                    initial={{
+                                        scaleY: 1.0,
+                                    }}
+                                    transition={{
+                                        duration: .15,
+                                    }}
+                                    whileHover={{
+                                        scaleY: 1.8,
+                                    }}
+                                    rel="noreferrer" href="http://krzheminsky.inf.ua/">About Me</motion.a>
                             </li>
 
                         </ul>
