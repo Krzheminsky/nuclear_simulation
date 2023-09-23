@@ -12,7 +12,7 @@ const Wind = () => {
 
     const meteo = useSelector(state => state.cloud.currentWeather)
     // Достаем из джейсона скорость и направление ветра
-    const currentTime = meteo.current_weather.time;
+    const currentTime = meteo.current_weather.time.slice(0, -2) + "00";
     const findTime = meteo.hourly.time
     const currentWinddirection = meteo.hourly.winddirection_180m
     const currentHourly = findTime.indexOf(currentTime)

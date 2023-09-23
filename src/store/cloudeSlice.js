@@ -116,21 +116,20 @@ const cloudeSlice = createSlice({
         },
 
     },
-    extraReducers: {
-        [fetchMeteo.pending]: (state) => {
-            state.status = 'loading';
-            state.error = null;
-        },
-        [fetchMeteo.fulfilled]: (state, action) => {
-            state.status = 'resolved';
-            state.currentWeather = action.payload;
-        },
-        [fetchMeteo.rejected]: (state, action) => {
-            state.status = 'rejected';
-            state.error = action.payload;
-
-        },
-
+    extraReducers: (builder) => {
+        builder
+            .addCase(fetchMeteo.pending, (state) => {
+                state.status = 'loading';
+                state.error = null;
+            })
+            .addCase(fetchMeteo.fulfilled, (state, action) => {
+                state.status = 'resolved';
+                state.currentWeather = action.payload;
+            })
+            .addCase(fetchMeteo.rejected, (state, action) => {
+                state.status = 'rejected';
+                state.error = action.payload;
+            });
     },
 })
 

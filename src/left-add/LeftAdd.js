@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import './LeftAdd.css';
 import Wind from "../wind/Wind";
 
 import { useDispatch } from 'react-redux';
-import { addDirectionWind, addWind, addTypeExplosion, addPower } from '../store/cloudeSlice'
+import { addWind, addTypeExplosion, addPower } from '../store/cloudeSlice'
 import { useSelector } from 'react-redux'
 
 
@@ -15,7 +15,7 @@ function LeftAdd(props) {
 
 
     // Достаем из джейсона скорость и направление ветра
-    const currentTime = meteo.current_weather.time;
+    const currentTime = meteo.current_weather.time.slice(0, -2) + "00";
     const findTime = meteo.hourly.time
     const currentWindspeed = meteo.hourly.windspeed_180m
     const currentHourly = findTime.indexOf(currentTime)
@@ -23,10 +23,6 @@ function LeftAdd(props) {
     const windspeed_180m = +currentWindspeed[currentHourly]
 
     // and find
-
-
-
-
 
 
     const result = (e) => {
