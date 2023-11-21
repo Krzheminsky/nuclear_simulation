@@ -74,3 +74,8 @@ span.errorrr {
 span.transparent {
     color: #11ffee00;
 }
+
+.wind {
+    color: tomato;
+    font-weight: 600;
+}

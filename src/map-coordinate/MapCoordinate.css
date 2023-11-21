@@ -28,3 +28,8 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
+
+.wind {
+    background-image: url(./roza_black.svg);
+    background-size: cover;
+}
