@@ -16,6 +16,7 @@ const Wind = () => {
   const currentHourly = findTime.indexOf(currentTime);
   const winddirection_180m = currentWinddirection[currentHourly];
   // and find
+  const arrow = useSelector((state) => state.cloud.direction.directionWind);
 
   return (
     <div className="wind">
@@ -25,7 +26,7 @@ const Wind = () => {
         max={360}
         width={100}
         direction={1}
-        knobSize={15}
+        knobSize={18}
         trackSize={0}
         dataIndex={!winddirection_180m ? 360 : winddirection_180m}
         progressSize={0}
@@ -41,6 +42,12 @@ const Wind = () => {
           dispatch(addDirectionWind({ directionWind }));
         }}
       />
+      <div
+        className="arrow"
+        style={{
+          transform: `rotate(${arrow}deg)`,
+        }}
+      ></div>
     </div>
   );
 };
