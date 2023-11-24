@@ -19,12 +19,12 @@ const Wind = () => {
   const arrow = useSelector((state) => state.cloud.direction.directionWind);
 
   return (
-    <div className="wind">
+    <div className="wind" style={{ position: "relative" }}>
       <CircularSlider
         label=""
         min={1}
         max={360}
-        width={100}
+        width={98}
         direction={1}
         knobSize={18}
         trackSize={0}
@@ -34,8 +34,8 @@ const Wind = () => {
         knobColor="tomato"
         appendToValue="°"
         valueFontSize="12px"
-        labelFontSize="10px"
-        verticalOffset="-5px"
+        // labelFontSize="10px"
+        verticalOffset="-3px"
         // progressColorFrom="grey"
         // progressColorTo="grey"
         onChange={(directionWind) => {

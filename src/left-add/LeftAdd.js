@@ -120,11 +120,11 @@ function LeftAdd(props) {
                 </td>
               </tr>
 
-              <tr>
+              <tr style={{ height: "114px" }}>
                 <th scope="row">
                   <label forhtml="exampleInput6" className="form-label">
                     Напрямок вітру <br />
-                    <span className="wind">
+                    <span className="wind-direct">
                       (азимут напрямку, з якого дме вітер!)
                     </span>
                   </label>

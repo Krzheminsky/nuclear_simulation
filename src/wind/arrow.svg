@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="418.000000pt" height="418.000000pt" viewBox="0 0 418.000000 418.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,418.000000) scale(0.100000,-0.100000)"
+fill="tomato" fill-opacity="0.5" stroke="none">
+<path d="M2020 3340 l0 -670 70 0 70 0 0 670 0 670 -70 0 -70 0 0 -670z"/>
+<path d="M2020 1141 c0 -237 -4 -372 -10 -376 -6 -3 -85 36 -178 88 -92 52
+-187 104 -211 116 l-43 23 101 -199 c169 -327 406 -773 411 -773 5 0 241 445
+421 793 l92 179 -44 -23 c-24 -12 -119 -64 -212 -115 -92 -52 -172 -94 -177
+-94 -6 0 -10 134 -10 375 l0 375 -70 0 -70 0 0 -369z"/>
+</g>
+</svg>
